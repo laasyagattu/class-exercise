@@ -35,6 +35,7 @@ def inspect_json(filepath):
     with open(filepath, "r") as f:
         data = json.load(f)
     logger.info(f"Loaded JSON: {filepath}")
+    print(data)
     return data
 
 
@@ -47,6 +48,7 @@ def inspect_yaml(filepath):
     with open(filepath, "r") as f:
         config = yaml.safe_load(f)
     logger.info(f"Loaded YAML: {filepath}")
+    print(config)
     return config
 
 
@@ -64,6 +66,7 @@ def inspect_env():
     # 2. Print keys.
     # Do not print passwords, API keys, or other secret values.
     logger.info(f"Loaded .env file")
+    print(keys)
     return keys
 
 
