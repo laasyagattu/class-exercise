@@ -22,3 +22,6 @@ venv/
 # extra files
 *.md
 *.pdf
+
+# Ignore all text files except requirements.txt
+!requirements.txt
